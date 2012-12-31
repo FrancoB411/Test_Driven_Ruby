@@ -2,8 +2,10 @@
 This repo contains my answers for the test driven Ruby tutorial. 
 
 ## Finished Tests
-* 00
-* 01
+* 00 hello
+* 01 temperature
+* 02 calculator
+* 03 simon says
 
 ## Other learning Resources
 
@@ -16,6 +18,8 @@ http://tutorials.jumpstartlab.com/projects/eventmanager.html#iteration-3:-output
 
 ### Typing tutorial for coders:
 http://typing.io/lesson/ruby/rails/relation/8
+
+
 
 
 
