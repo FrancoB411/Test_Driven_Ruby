@@ -7,6 +7,7 @@ This repo contains my answers for the test driven Ruby tutorial.
 * 02 calculator
 * 03 simon says
 * 04 pig latin
+* 05 silly blocks
 
 ## Other learning Resources
 
