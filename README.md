@@ -9,6 +9,7 @@ This repo contains my answers for the test driven Ruby tutorial.
 * 04 pig latin
 * 05 silly blocks
 * 06 performance monitor
+* 07 hello friend
 
 ## Other learning Resources
 
