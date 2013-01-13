@@ -10,6 +10,7 @@ This repo contains my answers for the test driven Ruby tutorial.
 * 05 silly blocks
 * 06 performance monitor
 * 07 hello friend
+* 08 temperature object
 
 ## Other learning Resources
 
