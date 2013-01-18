@@ -4,23 +4,23 @@ class Book
   SKIP_WORDS = [ "and", "in", "the", "of", "a", "an" ]
 
   def title
-    word_array = @title.split(" ")
-    titleize(word_array)
+    titleize(@title)
   end
 
-  private
+private
 
-  def skip_cap?(word)
-    SKIP_WORDS.include?(word)
+  def titleize(title)
+    title_words = make_word_array(title.capitalize)
+    titleized = title_words.collect { |word| capitalize_or_not(word) }
+    titleized.join(" ")
+  end
+
+  def make_word_array(title)
+    title.split(" ")
   end
 
   def capitalize_or_not(word)
-    skip_cap?(word) ? word : word.capitalize
+    SKIP_WORDS.include?(word) ? word : word.capitalize
   end
 
-  def titleize(word_array)
-    word_array.first.capitalize!
-    titleized = word_array.collect { |word| capitalize_or_not(word) }
-    titleized.join(" ")
-  end
 end
