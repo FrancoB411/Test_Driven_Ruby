@@ -11,6 +11,7 @@ This repo contains my answers for the test driven Ruby tutorial.
 * 06 performance monitor
 * 07 hello friend
 * 08 temperature object
+* 09 book titles
 
 ## Other learning Resources
 
