@@ -12,6 +12,7 @@ This repo contains my answers for the test driven Ruby tutorial.
 * 07 hello friend
 * 08 temperature object
 * 09 book titles
+* 10 timer
 
 ## Other learning Resources
 
