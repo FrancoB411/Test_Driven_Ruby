@@ -8,12 +8,11 @@ class Book
 private
 
   def titleize(title)
-    title_words = title.capitalizetitle.split(" ")
-    titleized = title_words.collect { |word| capitalize_or_not(word) }
-    titleized.join(" ")
+    title_words = title.capitalize.split(" ")
+    title_words.collect { |word| cap(word) }.join(" ")
   end
 
-  def capitalize_or_not(word)
+  def cap(word)
     skip_words.include?(word) ? word : word.capitalize
   end
 
