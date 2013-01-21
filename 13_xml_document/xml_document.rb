@@ -1,20 +1,24 @@
+require "rexml/document"
+
 class XmlDocument
 
-  def hello(options={})
-    "<hello#{add_if_name(options)}/>"
-  end
-
-  def method_missing(name)
-    tag(name) 
-  end
-
-  def tag(name)
-    "<#{name}/>"
+  def method_missing(name, *args, &block) 
+    tag = "<#{name}#{add_if_name(args)}"
+    if block_given?
+      tag + ">#{yield}</#{name}>"
+    else
+      tag + "/>"
+    end
   end
 
 private
   def add_if_name(options)
-    " name=\'#{options[:name]}\'" unless options.empty?
+    unless options.empty?
+      attribute = options[0]
+      name = attribute.keys.first
+      value = attribute[name]
+      " #{name}=\'#{value}\'"
+    end 
   end
 
 end
