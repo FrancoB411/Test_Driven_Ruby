@@ -1,15 +1,16 @@
 class Temperature
+  attr_accessor :options
 
   def initialize(options)
-    @options = options
+    self.options = options
   end
 
   def in_fahrenheit
-    @options[:f] ? @options[:f] : c_to_f(@options[:c])
+    options[:f] ? options[:f] : c_to_f(options[:c])
   end
 
   def in_celsius
-    @options[:c] ? @options[:c] : f_to_c(@options[:f])   
+    options[:c] ? options[:c] : f_to_c(options[:f])   
   end
 
   def self.from_celsius(temp_in_c)
