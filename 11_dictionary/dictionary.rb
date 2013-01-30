@@ -11,7 +11,7 @@ class Dictionary
   end
 
   def keywords
-    @entries.keys.sort
+    self.entries.keys.sort
   end
 
   def include?(string)
